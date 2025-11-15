@@ -1,6 +1,19 @@
 main{
     max-width: 840px;
 }
+nav{
+    background-color: #333;
+    padding: 1rem;
+}
+nav a {
+    color: white;
+    padding: 0.5rem 1 rem;
+    display: block;
+}
+h1{
+    color: #222;
+    
+}
 aside{
     width: 20rem;
     margin: 1rem;
