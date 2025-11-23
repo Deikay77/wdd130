@@ -3,9 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root {
-    --img-height: auto;
-}
+
+
 
 main{
     max-width: 840px;
@@ -47,7 +46,7 @@ aside{
 }
 aside img {
     width: 200px;
-    height: var(--img-height);
+    height: auto;
 }
 
 aside h2{
