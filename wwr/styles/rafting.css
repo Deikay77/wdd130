@@ -2,6 +2,7 @@
   --primary-color: #0b3d91;
   --secondary-color: #f2a65a;
   --accent1-color: #13315c;
+  --accent2-color: #f9d342;
 
   --heading-font: Georgia, serif;
   --body-font: Arial, sans-serif;
@@ -19,20 +20,23 @@ body {
   color: var(--accent1-color);
 }
 
-header, main, footer {
+header,
+main,
+footer {
   width: 840px;
   margin: 0 auto;
 }
 
 /* HEADINGS */
-h1, h2 {
+h1,
+h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
   text-align: center;
   margin: 1rem 0;
 }
 
-/* HEADER SECTION */
+/* HEADER LAYOUT */
 header {
   display: grid;
   grid-template-columns: 120px 1fr;
@@ -44,11 +48,12 @@ header img {
   width: 80px;
 }
 
+/* NAV USING FLEXBOX */
 header nav ul {
   display: flex;
   justify-content: flex-end;
-  list-style: none;
   gap: 2rem;
+  list-style: none;
 }
 
 header nav a {
@@ -59,7 +64,7 @@ header nav a {
 
 /* HERO SECTION */
 .hero {
-  position: relative; /* REQUIRED */
+  position: relative;
   width: 100%;
 }
 
@@ -69,40 +74,34 @@ header nav a {
   object-fit: cover;
 }
 
-/* HERO TITLE OVERLAY */
 .hero h1 {
-  position: absolute; /* REQUIRED */
+  position: absolute;
   top: 20px;
   width: 100%;
   text-align: center;
-  background-color: rgba(11, 61, 145, 0.7);
-  color: #ffffff;
+  background-color: rgba(19, 49, 92, 0.7);
+  color: white;
   padding: 1rem;
   font-size: 2rem;
 }
 
-/* HERO ARTICLE OVERLAY */
+/* HERO ARTICLE — REQUIRED FIX */
 .hero article {
-  position: absolute; /* REQUIRED */
+  position: absolute;
   bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70%;
-  background-color: rgba(255, 255, 255, 0.95);
+  left: 20px;
+  width: 65%;
+  background: rgba(255, 255, 255, 0.9);
   padding: 1rem;
-  border: 1px solid #cccccc;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border: 1px solid #ccc;
 }
 
-/* REQUIRED: image floats to the right */
+/* IMAGE FLOAT — REQUIRED FIX */
 .hero article img {
-  width: 120px;
-  float: right; /* REQUIRED */
+  float: right;
+  width: 100px;
+  height: auto;
   margin-left: 1rem;
-  border-radius: 4px;
 }
 
 /* HISTORY SECTION */
@@ -110,8 +109,9 @@ header nav a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   align-items: center;
+  text-align: left;
 }
 
 .history-grid img {
@@ -119,11 +119,12 @@ header nav a {
   border-radius: 4px;
 }
 
-/* ADVENTURE GALLERY */
+/* ADVENTURES GALLERY — REQUIRED SECTION */
 .adventure-gallery {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  margin: 1rem 0;
 }
 
 .adventure-gallery figure {
@@ -158,8 +159,4 @@ footer .socialmedia {
 
 footer img {
   width: 35px;
-}
-
-footer a {
-  text-decoration: none; /* REQUIRED */
 }
