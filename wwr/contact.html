@@ -61,10 +61,22 @@
                 <fieldset>
                     <legend>Message Purpose</legend>
 
-                    <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+                    <label for="purpose1">
+                        <input type="radio" id="purpose1" name="purpose" value="General Inquiry" required>
+                        General Inquiry
+                    </label>
+
+                    <label for="purpose2">
+                        <input type="radio" id="purpose2" name="purpose" value="Reservation Question">
+                        Reservation Question
+                    </label>
+
+                    <label for="purpose3">
+                        <input type="radio" id="purpose3" name="purpose" value="Website Suggestion">
+                        Website Suggestion
+                    </label>
                 </fieldset>
+
 
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4" placeholder="Type here"></textarea>
